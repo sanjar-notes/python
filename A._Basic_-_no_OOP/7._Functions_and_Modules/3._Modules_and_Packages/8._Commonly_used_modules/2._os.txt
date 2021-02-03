@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-06T17:50:12+05:30
+
+====== 2. os ======
+Created Wednesday 06 January 2021
+
+This module provides a portable way of using operating system dependent functionality, like the filesystem, terminal etc.
+* It is a very powerful module.
+* It can be used to write great functions which do real world tasks.
+
+Shell functions:
+1. ''os.system''(command) runs the command, returns error code - 0 for success.
+2. ''os.popen''(command).''read''() returns the output as string.
+
+File System functions:
+1. ''os.walk''(directory_name) returns a list of 3-tuples(root, directories, files).
+2. ''os.listdir''(directory_name) returns a list of all files/folders.
+3. ''os.path.exists''(name) returns True if name file/folder exists.
+4. ''os.path.isdir''(directory_name) returns True if the argument is a directory in the folder, else False.
+5. ''os.chdir(''destination'')'', changes to the 'destination'
+6. ''os.curdir ''- returns the current directory named
+7. ''os.walk''() returns a tuple containing **root**, **directories** and **files** lists respectively.

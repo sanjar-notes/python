@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-06T16:43:10+05:30
+
+====== 0. Modules ======
+Created Wednesday 06 January 2021
+
+There are several advantages of ''modul''~~''e''~~arizing code in a large application:
+* Separation of concerns (SoC) - easy debugging, testing, participative, low impact of change, low coupling.
+* Reusability - less duplicate code
+* Scoping - Eliminates naming collisions, i.e modules may have variables with the same name.
+
+There three kinds of modules, but they are all treated the same:
+1. Python file.
+2. C/C++ file, e.g the re(regex) module
+3. A built-in module, like ''itertools'', that is contained intrinsically in the interpreter.

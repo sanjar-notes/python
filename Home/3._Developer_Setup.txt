@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-06T07:05:29+05:30
+
+====== 3. Developer Setup ======
+Created Tuesday 06 October 2020
+
+Source - https://pycon.switowski.com/
+Requirements
+1. VSCode
+2. Docker

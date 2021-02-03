@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-27T21:07:37+05:30
+
+====== 0. Getters and Setters ======
+Created Wednesday 27 May 2020
+
+* Python classes don't need getters and setters to be able to work.
+* Python assumes that we're responsible adults, and hence doesn't include the facility of private.
+* Getter and setters are still useful.
+**Demo**: Python does not need to have different classes in different files, as is common in Java and C++.
+	* We'll also learn how to work with multiple files, import methods.
+	* We are making a game here.
+
+--------------------
+Setter:
+	1. Don't worry about them, i.e we won't need them.
+	2. We can add getters and setters, even after the class is made.
+	3. They are very useful for consistency constraints.
+Getter:
+

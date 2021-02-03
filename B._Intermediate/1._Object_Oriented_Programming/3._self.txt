@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-22T06:37:56+05:30
+
+====== 3. self ======
+Created Friday 22 May 2020
+
+Some conventions:
+1. Single line between methods.(PEP8)
+2. Two lines between function in a module.(PEP8)
+3. Two line between classes.(Personal preference)
+--------------------
+* All class methods have a **self** attribute, this is compulsory: To distinguish it from the static methods. 
+* self could be named anything, but self is very well established, may not work for some software.
+* **self** is a reference to the instance variables of a class, analogous to **this** in C++.
+* There's no need to provide self when calling methods/accessing attributes.
+* We can use the self argument during call, when using the class name directly.
+{{{code: lang="python3" linenumbers="True"
+hamilton.switch_on()
+Kettle.switch_on(hamilton) # equivalent
+}}}
+

@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-17T11:52:24+05:30
+
+====== 2. Range ======
+Created Saturday 17 October 2020
+
+**Range - **It's a bulit in type in python3.
+
+=== Syntax for ''range'' ===
+* General form - ''range([start=0,] end [, step=1])''
+* range(n) ≡ range(0, n, 1)
+
+Note: A range with absurd parameters is empty, but this is revealed only upon iteration(or equivalent operation).
+
+=== Features ===
+* Creating a list/set - pass ''range'' object to ''list'' constructor
+* ''len'' is valid for ''range''
+* ''range'' is subscriptable. For example ''range(1, 155, 2)[3]'' is ''7''
+* ''range'' is sliceable. For example ''range(1, 10)[2:4]'' is ''range(3, 5)''
+
+
+=== Uses ===
+a. Used in the ''for'' loop:
+{{{code: lang="python3" linenumbers="True"
+for i in range(0, 100, 5):
+	print(i)
+}}}
+
+b. Obtain all divisiors of some 'x' in the range, using ''len''().
+c. Used in loops which increase by more than one, standard for loop
+
+=== Details ===
+* Range takes up constant space.
+* ''xrange'' in py2 ≡ ''range'' in py3
+
+Note: range is not a generator.

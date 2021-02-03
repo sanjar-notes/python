@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-28T00:42:42+05:30
+
+====== 1. str function ======
+Created Thursday 28 May 2020
+
+When we print the object, Python looks for the ''__str''//''__''//''()'' method inside the class.
+{{{code: lang="python3" linenumbers="True"
+def __str__():
+	# return string equivalent
+}}}
+
+=== Using str ===
+str is used at two places:
+* ''print''(object_variable) actually calls ''__str__'' to print the string equivalent.
+* ''str(''object_variable) returns the ''__str__'' value.
+

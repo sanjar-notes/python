@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-12T10:45:59+05:30
+
+====== 5. Import details ======
+Created Tuesday 12 January 2021
+
+=== Import manipulates the symbol tables ===
+* Each module has its own **private symbol table**, which serves as the global symbol table for all objects defined in the module. So, when a module is imported, a separate namespace is created in the calling file, which can be accessed either by the ''import'' argument or the alias(if defined).
+* In a selective import or asterisk, the imported object(s) are added to the global namespace of the caller script. This(appending) is the reason for collisions.
+
+=== dir() function - returns key list of current namespace ===
+* Without arguments, returns the list of objects in the local scope. 
+* With an argument, returns a list of valid attributes for that object. Can be used for module objects too.
+* This can be useful for identifying what exactly has been added to the namespace by an import statement.
+{{{code: lang="python3" linenumbers="True"
+print(dir())
+from math import *
+print(dir())
+}}}
+
+* It is very helpful when learning about modules and packages.
+* ''dir()'' does not list the names of built-in functions and variables. If you want a list of those, they are defined in the standard module ''builtins''.
+
+=== Reloading a module ===
+* For reasons of efficiency, a module is only loaded once per interpreter session, even if different kinds of ''import'' statements reference the same module again.
+{{{code: lang="python3" linenumbers="True"
+# mod.py
+print('Hello')
+>>> import mod
+Hello
+>>> import mod # nothing happens
+>>> import mod as t
+>>> # still nothing
+>>> from mode import *
+>>> # still nothing
+}}}
+
+* This is okay in majority of cases because module has no active code(contains classes, functions, global variables), but sometimes we need a module to be active, say in server intializations. How do we do this? - **''importlib'' **to the rescue.
+{{{code: lang="python3" linenumbers="True"
+import mod
+Hello # printed
+import importlib
+importlib.reload(mod)
+Hello # printed
+}}}
+`

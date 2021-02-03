@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-17T11:29:01+05:30
+
+====== 3. Conditionals, loops, operators ======
+Created Saturday 17 October 2020
+
+* Python is indented and does not force the use of delimiters like ;
+* ; can be used to write multiple statements on the same line, which will be executed sequentially. This is frowned upon, because it hampers readablity.
+* Blocks statements have the same indentation, continually. A block in python is called a 'suite'.

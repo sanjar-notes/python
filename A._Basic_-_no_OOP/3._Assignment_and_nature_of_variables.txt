@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-17T11:39:48+05:30
+
+====== 3. Assignment and nature of variables ======
+Created Saturday 17 October 2020
+
+=== Basic ===
+{{./pasted_image.png}}
+Note: 
+* This holds uniformly for basic types only
+* For non basic types - change at memory location
+
+=== Assignment ===
+1. For basic data structures - string, int, bool, float - by value.
+2. All else - by reference(i.e only an alias is created). Use **obj.copy()** for a deep copy.
+Note:
+	* use keyword '**is**' to check if two variables point to the same memory location.
+	* **==** does bit by bit comparison, except for functions, because undecidable.
+
+=== Augmented Assignment ===
+1. +, *, =, %, //, **
+2. In C/C++ and Java, both assignments are same. But python creates a buffer variable if we use long hand assignment. Augmented is in-place and hence fast.
+3. Can be used universally, i.e used for strings too.
+4. Other operators are &=, ^=, |=, <<=, >>=
+
+=== Walrus operator(assignment expressions) ===
+Just like C++, C, JS we can operate on an assignent expression, which first evaluates the expression and then operates on the value.
+* Available in Python3.8+
+* Syntax - The assignment operator(=) has a colon before it, no spaces.
+{{{code: lang="python3" linenumbers="True"
+(x=2)*3 # Syntax in C++, C, JS
+(x:=2)*3 # New Syntax - declaration/assignment and operation
+}}}

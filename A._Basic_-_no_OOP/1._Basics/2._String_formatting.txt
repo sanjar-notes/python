@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-17T11:11:25+05:30
+
+====== 2. String formatting ======
+Created Saturday 17 October 2020
+
+=== Method 1 - f strings (modern) ===
+TODO fstrings
+
+=== Method 2 - String Replacement Fields(medieval) ===
+0. Syntax - ' {0} something'.format(obj)
+1.use {k} for a replacefield where k represents the position of the variable in the format()
+{{{code: lang="python3" linenumbers="True"
+>>> print("I am a {0}".format("Boy", "Girl"))
+I am a Boy
+}}}
+
+	if we don't use k, python assumes k from 0 to last - It works with classes too, i.e {.field} is OK.
+2. We can have multiple and duplicate replacement fields, and they can be out of order as well.
+3. For floating point numbers
+	e.g print("{0:a.b}".format(22/7))
+	a = total length(both fract as well as non fract) including the '.' (optional)
+	b = fract length (after the .)
+4. For printing a number in binary, hex or oct, we just write {0:b} or {0:o} or {0:x}
+5. We can use [] or . notation inside a {}
+{{{code: lang="python3" linenumbers="True"
+'{[2]}'.format([1,2,3]) # -> '3'
+'{.name}'.format(object) # -> 'object.name_value'
+}}}
+
+* We can write {index: filler align leng num_sys dot_fract_length f} :FALNFf
+	**MAID** two sections with 3 on both sides - everything is optional on the second section
+	Left - filler, align, length
+	Right - num_sys, dot_fract_length, f
+e.g print("{0:>06b}".format(9)) is 001001
+e.g print("{0:>06.2f}".format(22 / 7)) is 0003.1
+* Don't use binary and decimal at the same time
+#print('{0:.2f}'.format(123.234))
+
+=== Method 3 - **String formatting (ancient)** ===
+1. Using str(), to convert a data type using + and strings, we should use str()
+2. We can avoid +, by simply using print(var1, var2, sep = "")
+3. We can write a paragraph(string) and describe it in different lines by using triple quotes, instead of single quotes
+	Note: Don't have 4 quotes in a row. i.e """abc"d" """
+	Use point 3 to avoid /'s as """ or single doesn't have any problems with using " inside as many times as we wish.
+4. We can get input like **cin**, actually better using input.split(), this returns a list of strings of the inputs, Enter <- is the end.
+	e.g input().split(), 1 2 3, returns ['1', '2', '3']
+{{{code: lang="python3" linenumbers="True"
+a, b, c = map(int, input().split()) # a = 1, b=2, c=3 for input 1 2 3
+}}}

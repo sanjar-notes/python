@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-28T12:17:40+05:30
+
+====== 4. Challenge ======
+Created Thursday 28 May 2020
+
+{{./pasted_image.png}}
+{{./pasted_image002.png}}
+
+Learnings:
+1. We have a chained calls for init. super() accesses the parent's method.
+2. Understanding that code can be very different, just like most Science - If we give a problem to 10 programmers, we will have 11 different solutions.

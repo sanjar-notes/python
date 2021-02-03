@@ -1,0 +1,67 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-14T17:21:01+05:30
+
+====== 1. Packing and unpacking ======
+Created Thursday 14 January 2021
+
+[[https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/#:~:text=Unpacking%20in%20Python%20refers%20to,the%20iterable%20unpacking%20operator%2C%20*%20.|Source]]
+This works for all iterables, generator expressions, ranges etc.
+
+=== Unpacking(the iterable in RHS) ===
+There are 2 kinds, which are very similar:
+1. Out of place unpacking - used to assign values in one-one fashion
+{{{code: lang="python3" linenumbers="True"
+a, b, c = 1, 2, 3 # same as (1, 2, 3) - a tuple
+a, b, c = [1, 2, 3]
+a, b, c = {1, 2, 3}
+a, b, c = {'p':1, 'q':2, 'r':3} # keys are assigned
+}}}
+
+2. In-place unpacking - used in merging iterables, in function calls.
+{{{code: lang="python3" linenumbers="True"
+def f(a, b, c):
+	print(a, b, c)
+
+k = [1, 2, 3]
+f(*k) # 1 2 3, for dicts prints keys
+# f(k) would be an error: a=k and but b, c will be remain unassigned
+}}}
+
+
+=== Packing(Collecting multiple values) ===
+1. Single reciever - trailing comma is //required//
+{{{code: lang="python3" linenumbers="True"
+*b = 1, 2, 3
+# b = [1, 2, 3] (list)
+}}}
+
+2. Multiple items in LHS - comma not required. Python automatically packs values, if left into the "//container"// object.
+{{{code: lang="python3" linenumbers="True"
+a, *b = 1, 2, 3 # b == [2, 3] - Simple
+a, *b, c = 1, 2, 3, 4 # b is [2, 3] - spaced
+
+# b may be empty sometimes
+a, *b, c = 1, 2 # b [] empty - no values left
+}}}
+
+=== Uses ===
+1. Parallel assignment - assign multiple values at once.
+2. Swapping values between variables - ''a, b = b, a''
+3. Collecting mutiple values with * - ''a, *b, d = 1, 2, 3, 4 # b is [2,3]''
+4. Dropping unneeded values with * - ''a, b, *_ = input().split()''
+5. Merging iterables with * and ** - similar to JS ellipsis
+{{{code: lang="python3" linenumbers="True"
+x = [1, 2]
+y = [3, 4, *x, 6] # [3, 4, 1, 2, 6]
+
+# for dicts, use **
+x = {'a': 1, 'b': 2}
+y = {'c': 3, 'd': 4}
+z = {**x, **y} # dicts merged
+}}}
+
+
+Note: 
+* ** is only used for for merging dicts, and nowhere else.
+* Beware of unpacking a ''set'', they don't have a specific order. Use it only if the order is irrelevant.

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-25T04:58:36+05:30
+
+====== 7.4 Significance of Doc-Strings ======
+Created Monday 25 May 2020
+
+* The doc-strings are used by many IDEs and other software for IntelliSense support for the documentation written by us. They'll be flagged accordingly.

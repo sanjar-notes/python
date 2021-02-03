@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-09T19:14:19+05:30
+
+====== 1. Iterator ======
+Created Saturday 09 January 2021
+
+Iterators are everywhere in Python. They are elegantly implemented within for loops, comprehensions, generators etc. but are //hidden// in plain sight.
+
+* Iterators are objects that can be iterated upon.
+* Iterators are used to 'freely' traverse iterables. 
+
+Only [[https://stackoverflow.com/questions/2777188/making-a-python-iterator-go-backwards|forward]] ''iterator''(s) exist in Python by default.
+
+=== Syntax ===
+* Get an iterator - ''iter''(myIterable) returns an ''iterator''.
+* Move forward - ''next''(myIterator)
+
+3. after the last elements iterator, we get an error
+
+
+string = "123456789"
+
+for char in string:
+	print(char, end='')
+
+for char in iter(string):
+	print(char)
+
+---
+
+listt = ["sanjar", "maryam", 1, 2, 5, "ahmar", 7]
+
+my_iterator = iter(listt)
+
+# for i in range(len(listt)):
+#     print(next(my_iterator))
+
+# same as
+for i in listt:
+	print(i)

@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-25T01:58:22+05:30
+
+====== 7.1 Raw strings ======
+Created Monday 25 May 2020
+
+* Raw strings are strings that are not printed visually. In other words, raw strings when printed, print \t as \t and not as a tab. \a will be printed as \a and no audio will be heard.
+* They are used for regex:
+	* To remove the need for \\
+* There's no such thing as a raw string data type, the 'r' only specifies interpretation.
+* We need to use \\ if we need a \ at the end of a raw string, as \ will mean quotes are escaped, can't terminate the string.
+CR-LF and LF:
+1. Windows uses CR-LF (carriage return and line feed) to go to the next line. This has stayed because computers were programmed using Teletype computers. Windows used ASCII 13 and 10 for going to the next line(Left of the next line).
+2. UNIX, and therefore Linux, simply do LF(ASCII 10) for going to the next line.
+Objective: Use '\n', and not ASCII characters directly for escape characters.  
+	Code is better than words.
+{{{code: lang="python3" linenumbers="True"
+print('1'+chr(10)+'2') # undesired output if on Windows
+print('1'+chr(13)+chr(10)+'2') # undesired output if on *nix
+print('1\n2')	# correct, works for both, Python takes care of LF and CRLF
+}}}

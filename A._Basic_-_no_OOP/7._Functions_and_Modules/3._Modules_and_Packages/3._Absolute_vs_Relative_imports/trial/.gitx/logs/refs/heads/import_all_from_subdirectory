@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 8e6f3846e018bb136145fb19415b68484e8fea2a sanjarcode <sanjarcode@gmail.com> 1610797275 +0530	branch: Created from HEAD
+8e6f3846e018bb136145fb19415b68484e8fea2a d76b8397d2d5e5000fe4b7c784d8455496f5e104 sanjarcode <sanjarcode@gmail.com> 1610797424 +0530	commit: asterisk failure demo
+d76b8397d2d5e5000fe4b7c784d8455496f5e104 c625e2d26c6548be19986811a082671f8b76bf41 sanjarcode <sanjarcode@gmail.com> 1610798586 +0530	commit (amend): asterisk failure demo
+c625e2d26c6548be19986811a082671f8b76bf41 ff870427713b1655fcd01d4bbe32d8de212241f8 sanjarcode <sanjarcode@gmail.com> 1610798638 +0530	commit (amend): asterisk failure demo
+ff870427713b1655fcd01d4bbe32d8de212241f8 ff870427713b1655fcd01d4bbe32d8de212241f8 sanjarcode <sanjarcode@gmail.com> 1610798800 +0530	Branch: renamed refs/heads/import_all to refs/heads/import_all_from_subdirectory
+ff870427713b1655fcd01d4bbe32d8de212241f8 90516cd4c6d652faab5c204cc20354ec23c276a8 sanjarcode <sanjarcode@gmail.com> 1610798833 +0530	commit: all works for subdirectory

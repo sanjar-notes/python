@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-14T13:42:32+05:30
+
+====== 2. Read ======
+Created Thursday 14 May 2020
+
+* for a single byte characterm use normal print.
+* We can read byte type data by using **int.from_bytes(**byte_data, byteorder**)**
+	a. byte_data is just file.read(length)
+	b. byteorder - 'big' or 'little'
+{{{code: lang="python3" linenumbers="True"
+print(int.from_bytes(bin_file.read(1), 'little'))	# provide byte_value, length, byteorder
+}}}
+		
+	* Byte order for a piece of data should be the same as during write, as we are allowed to mix the byte-order for different types.

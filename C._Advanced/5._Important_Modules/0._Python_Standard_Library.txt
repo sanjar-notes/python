@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-12T10:42:40+05:30
+
+====== 0. Python Standard Library ======
+Created Tuesday 12 January 2021
+
+It is a package that ships with Python, and includes many useful modules - some of them are included automatically(''__builtins__''), whilst others need to be included(imported) explicitly(like shelve, random, pickle).
+* There are **many more** things other than from ''__builtins__'' that are included automatically.

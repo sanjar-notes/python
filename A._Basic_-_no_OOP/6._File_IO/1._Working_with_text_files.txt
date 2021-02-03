@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-13T21:52:23+05:30
+
+====== 1. Working with text files ======
+Created Wednesday 13 May 2020
+
+Reading is very easy.
+1. open('path/file_name', mode) - it'll be created if nonexistent.
+	a. path can be relative(. and ..) or absolute. Just write file name if we are in the same directory.
+	b. File will be created, only in **w **mode.
+	c. Modes are discussed ahead.
+2. reading - check file.readable() == True
+	a. readline() - line by line, one line as a string at a time
+	b. readlines()  - returns a list of lines as strings
+	c. read() - returns the whole file as a string
+3. closing the file using f.close(), where f is the file variable.
+--------------------
+* Pythonic way of reading - we can iterate over the lines, rather than writing a while loop. All content behaves as if it were in a list.
+{{{code: lang="python3" linenumbers="True"
+f = open('file.ext', 'r')
+for line in f:
+	print(line, end='') # this is important, as we already have a \n at end of each line
+f.close()
+}}}
+
+* There's a fail-proof method for reading files - using **with **keyword, this tidies up the object after execution. Files support this. **with **also returns an exception if an **error occurs. **This is called a context Manager.
+This helps us release the file once we are done working on it:
+{{{code: lang="python3" linenumbers="True"
+with open('file.ext', 'r') as f: # same syntax as import
+	for line in f:
+		print(line, end='')
+# no need to close the file
+}}}
+
+File functions
+
+[[./reading.py]]

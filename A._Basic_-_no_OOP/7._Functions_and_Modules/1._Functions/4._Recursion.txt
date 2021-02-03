@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-22T01:32:22+05:30
+
+====== 8. Recursion ======
+Created Friday 22 May 2020
+
+**Python supports recursion**

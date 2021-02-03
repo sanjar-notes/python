@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-06T06:43:31+05:30
+
+====== 2. Version and package management ======
+Created Tuesday 06 October 2020
+

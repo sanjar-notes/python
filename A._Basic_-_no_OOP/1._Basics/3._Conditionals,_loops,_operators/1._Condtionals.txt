@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-14T21:49:50+05:30
+
+====== 1. Condtionals ======
+Created Thursday 14 January 2021
+
+=== Conditionals ===
+There are 4 variations
+{{{code: lang="python3" linenumbers="True"
+if condition:
+	# do something
+	pass
+}}}
+
+{{{code: lang="python3" linenumbers="True"
+if condition:
+	# do something
+	pass
+else:
+	# some code
+	pass
+}}}
+
+{{{code: lang="python3" linenumbers="True"
+if condition:
+	# do something
+	pass
+elif condition2:
+	pass
+elif condition3:
+# many times
+
+# no else
+}}}
+
+{{{code: lang="python3" linenumbers="True"
+if condition:
+	# do something
+	pass
+elif condition2:
+	pass
+elif condition3:
+	# many times
+else:
+	# some code
+	pass
+}}}

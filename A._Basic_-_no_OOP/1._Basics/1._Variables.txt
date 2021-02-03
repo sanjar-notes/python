@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-17T11:07:25+05:30
+
+====== 1. Variables ======
+Created Saturday 17 October 2020
+
+=== Basic ===
+* Variables are an easy way to refer to memory locations and store data.
+* Everything is an object in Python.
+* Python is dynamically typed(no need to specify type anywhere). Declarations and initalizations are done at the same time.
+* Has an automatic garbage-collector(no manual memory management required).
+
+=== Naming rules ===
+Same as C++
+* Symbols allowed - lowercase and uppercase english alphabets, digits(0-9) and the underscore(_).
+* Names cannot start with a digit
+
+**Basic Ops**
+* int(str, radix) returns the integer value.
+
+There are 3 kinds of variables in python:
+1. Global variables
+2. Function Variables
+3. Class variables

@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-06T18:07:17+05:30
+
+====== 2. namespace ======
+Created Wednesday 06 January 2021
+
+A namespace is a collection of names. 
+
+* It is always associated with some region of code. It is not a physical region.
+* Different namespaces can co-exist at a given time but are completely isolated.
+* These different namespaces are isolated. Hence, the same name that may exist in different modules do not collide.
+
+=== Good to know ===
+* A namespace containing all the built-in names is created when we start the Python interpreter and exists as long as the interpreter runs.
+* Each module creates its own namespace during import.
+
+=== Types of namespaces ===
+There are 4 types of namespaces:
+1. Built-In 
+2. Global
+3. Enclosing
+4. Local
+{{./pasted_image.png?width=200}}

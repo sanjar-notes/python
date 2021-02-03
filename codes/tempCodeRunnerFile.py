@@ -1,0 +1,2 @@
+range(len(listt)):
+#     print
