@@ -1,4 +1,4 @@
-These are extensive Python3 notes that I created when learning Python(in an organized way this time).
+These are extensive Python3 notes that I created when learning Python(in an organized way this time 🙃️).
 
 It contains almost all of the usual stuff in Python3. I know C++ and have shortened some topics where Python3 and C++ are equivalent.
 
