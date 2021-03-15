@@ -1,6 +1,6 @@
 '''
 Dictionaries and sets - Both are unordered and no duplication is allowed.
-    1. Index is meaningless for both, but dictionaries have a index like thing called key.
+    1. Numbered index is meaningless for both, but dictionaries have a associative index like thing called key.
     2. Dictionaries - collection of key value pairs
     3. Both set and keys can have different type of objects
         dti = {2: "sanjar", "ahmar": 23, "sanjar":[4,5]} is okay

@@ -7,7 +7,7 @@ Created Thursday 21 May 2020
 
 Does python allow modifying variables that are currently not in scope? **Yes**!
 
-Among the 4 namespaces, local is meant to be changeable and builtins are immutable. So we only have two possibilities:
+Among the 4 namespaces, only local is meant to be changeable and builtins are immutable. So we only have two possibilities:
 1. ''global'' - allows changing of global variables.
 {{{code: lang="python3" linenumbers="True"
 x = 21
@@ -25,6 +25,7 @@ def g():
 
 2. ''nonlocal'' - syntax same as ''global''. Used to access outer function's variable inside a nested function. 
 	* Cannot be used in place of ''global''. Strictly used for nested entities.
+	* This exists because Python enforces a good coding practice - avoiding global variables.
 {{{code: lang="python3" linenumbers="True"
 def f():
     x = 2
@@ -38,3 +39,4 @@ f() # 45
 }}}
 
 
+Note: Reading global/nonlocal variables is always allowed. These keywords are only needed for writing to them.

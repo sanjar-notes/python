@@ -17,7 +17,7 @@ A namespace is a collection of names.
 
 === Types of namespaces ===
 There are 4 types of namespaces:
-1. Built-In 
+1. Built-In
 2. Global
 3. Enclosing
 4. Local
