@@ -1,7 +1,7 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
-Creation-Date: 2021-03-15T19:27:44+05:30
+Creation-Date: 2021-03-15T20:07:29+05:30
 
-====== 0. Trivia ======
+====== 2. Learning Python ======
 Created Monday 15 March 2021
 
