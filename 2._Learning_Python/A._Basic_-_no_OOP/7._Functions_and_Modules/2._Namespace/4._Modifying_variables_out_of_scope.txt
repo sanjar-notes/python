@@ -8,7 +8,7 @@ Created Thursday 21 May 2020
 Does python allow modifying variables that are currently not in scope? **Yes**!
 
 Among the 4 namespaces, only local is meant to be changeable and builtins are immutable. So we only have two possibilities:
-1. ''global'' - allows changing of global variables.
+1. ''global'' - allows writing to global variables.
 {{{code: lang="python3" linenumbers="True"
 x = 21
 def f():
@@ -23,7 +23,7 @@ def g():
 	x = 23	
 }}}
 
-2. ''nonlocal'' - syntax same as ''global''. Used to access outer function's variable inside a nested function. 
+2. ''nonlocal'' - syntax same as ''global''. Allows writing to the enclosing(outer) function.
 	* Cannot be used in place of ''global''. Strictly used for nested entities.
 	* This exists because Python enforces a good coding practice - avoiding global variables.
 {{{code: lang="python3" linenumbers="True"
@@ -39,4 +39,22 @@ f() # 45
 }}}
 
 
-Note: Reading global/nonlocal variables is always allowed. These keywords are only needed for writing to them.
+Note: 
+* Reading global/nonlocal variables is always allowed. These keywords are only needed for writing to them.
+* ''global'' is unique.
+* ''nonlocal'' will find and enable write access for the variable, assuming it is there at some enclosing scope. In other words, only the nearest scope variable is written to. If the variable is absent, an error is shown See example below:
+{{{code: lang="python3" linenumbers="True"
+def f(): # x is here
+	def g(): # no x here
+		print(x)
+		def h():
+			nonlocal x # refers to f.x, not g.x because that doesn't exist
+			x = 23
+		h()
+	g()
+	print(x)
+# output
+1
+23
+}}}
+
