@@ -16,9 +16,9 @@ A namespace is a collection of names.
 * Each module creates its own namespace during import.
 
 === Types of namespaces ===
-There are 4 types of namespaces:
-1. Built-In
-2. Global
-3. Enclosing
-4. Local
+There are 4 types of namespaces, in order of lookup:
+1. Local - function/class
+2. Enclosing - inner function
+Global - obvious
+4. Built-In - hackable, you can override ''print'' function.
 {{./pasted_image.png?width=200}}
