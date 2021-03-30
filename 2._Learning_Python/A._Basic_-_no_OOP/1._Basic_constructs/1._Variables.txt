@@ -18,7 +18,7 @@ Same as C++
 
 **Basic Ops**
 * int(str, radix) returns the integer value.
-
+FIXME
 There are 3 kinds of variables in python:
 1. Global variables
 2. Function Variables

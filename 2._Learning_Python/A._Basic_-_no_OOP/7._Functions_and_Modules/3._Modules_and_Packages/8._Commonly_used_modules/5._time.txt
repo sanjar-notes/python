@@ -39,7 +39,7 @@ The namedtuple contains
 * tm_mon, tm_year - as it is **month is 'mon'**
 * tm_mday, tm_wday, tm_yday - month week and year 
 
-[[8. Powerful features of Python:2. namedtuple]]
+[[8. Powerful features of Python:3. namedtuple]]
 --------------------
 Other ops:
 1. time.get_clock_info('clock_type_name') return the information about the clock. clock_type_name can be perf_counter, monotonic, time, or process_time.

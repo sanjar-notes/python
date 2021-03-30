@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2021-02-03T13:10:47+05:30
 
-====== 4. pass keyword ======
+====== pass keyword ======
 Created Wednesday 03 February 2021
 
 * pass is equivalent to {} in C like languages. It is strictly cosmetic and does not change flow of the program: like break, continue, return do.

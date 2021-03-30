@@ -2,6 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-10-20T19:20:21+05:30
 
-====== B. Intermediate ======
+====== B. Intermediate - classes, modules ======
 Created Tuesday 20 October 2020
 

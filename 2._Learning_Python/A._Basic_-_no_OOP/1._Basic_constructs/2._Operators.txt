@@ -14,7 +14,7 @@ Created Thursday 14 January 2021
 * BODMAS is followed for precedence, same as C++
 * Associativity same as C++
 
-=== Comparison ===
+=== Relational ===
 1. ''=='' equality
 2. ''!='' in equality
 3. ''>'', ''>='' and all //sensible// variations.
@@ -30,13 +30,7 @@ Created Thursday 14 January 2021
 	* (a and b)
 * ''!'' is not an operator by itself in python.
 
-=== Truthy and Falsy values ===
-* Python has the concept of truthy and falsy values.
-* There are 8 falsy values: 0, 0.0, 0j, "", (), {}, [], None are equivalent to False. Everything else is falsy.
-* ShortCircuiting exists for logical operators.
-
 === Bitwise operators ===
 Python follows 2's complement notation - standard.
 * ''>>'' - right shift. Sign is preserved
 * ''<<'' - left shift. 0's are padded
-

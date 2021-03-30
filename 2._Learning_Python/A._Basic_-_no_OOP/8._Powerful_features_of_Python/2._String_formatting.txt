@@ -8,9 +8,9 @@ Created Saturday 17 October 2020
 === Method 1 - f strings (modern) ===
 TODO fstrings
 
-=== Method 2 - String Replacement Fields(medieval) ===
-0. Syntax - ' {0} something'.format(obj)
-1.use {k} for a replacefield where k represents the position of the variable in the format()
+=== Method 2 - String Replacement Fields(still in use) ===
+0. Syntax - ''' {0} something'.format(obj)''
+1.use ''{idx}'' refers format()
 {{{code: lang="python3" linenumbers="True"
 >>> print("I am a {0}".format("Boy", "Girl"))
 I am a Boy
@@ -38,7 +38,7 @@ e.g print("{0:>06.2f}".format(22 / 7)) is 0003.1
 * Don't use binary and decimal at the same time
 #print('{0:.2f}'.format(123.234))
 
-=== Method 3 - **String formatting (ancient)** ===
+=== Method 3 - **String formatting (using %)** ===
 1. Using str(), to convert a data type using + and strings, we should use str()
 2. We can avoid +, by simply using print(var1, var2, sep = "")
 3. We can write a paragraph(string) and describe it in different lines by using triple quotes, instead of single quotes
