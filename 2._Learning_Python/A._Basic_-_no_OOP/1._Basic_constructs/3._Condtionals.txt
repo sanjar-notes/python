@@ -5,20 +5,6 @@ Creation-Date: 2021-01-14T21:49:50+05:30
 ====== 3. Condtionals ======
 Created Thursday 14 January 2021
 
-=== Truthy values ===
-* Python has the concept of truthy and falsy values.
-* There are 8 fairly obvious falsy values:
-	1. int 0
-	2. float 0.0
-	3. complex - 0j
-	4. sting ""
-	5. list []
-	6. tuple ()
-	7. set {}
-	8. None.
-* Everything else is truthy.
-* ShortCircuiting exists for logical operators.
-
 === Conditionals ===
 * General form(regex) → ''if'' ''elif*'' ''else?''. In other words, 4 variations are possible:
 {{{code: lang="python3" linenumbers="True"
@@ -72,3 +58,17 @@ else:
 
 === Switch ===
 Python doesn't have this feature.
+
+=== Truthy values ===
+* Python has the concept of truthy and falsy values.
+* There are 8 fairly obvious falsy values:
+	1. int 0
+	2. float 0.0
+	3. complex - 0j
+	4. sting ""
+	5. list []
+	6. tuple ()
+	7. set {}
+	8. None.
+* Everything else is truthy.
+* ShortCircuiting exists for logical operators.

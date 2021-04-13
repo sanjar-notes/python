@@ -5,30 +5,45 @@ Creation-Date: 2020-10-17T11:39:48+05:30
 ====== 3. Assignment and nature of variables ======
 Created Saturday 17 October 2020
 
-=== Basic ===
+=== Basic(Memory allocation) ===
+* Python pools basic variables. i.e x = 2; y = 2; point to the same location. Even z = 1 + 1 points to that location. Example - int, string.
+* Python does not pool non-basic types - list, dict etc.
 {{./pasted_image.png}}
-Note: 
-* This holds uniformly for basic types only
-* For non basic types - change at memory location
+{{{code: lang="python3" linenumbers="True"
+x = 2
+y = 1+1
+z = 2 - 0
+id(x)==id(y)==id(z) # True, basic types
+
+x = [1, 2, 3]
+y = [1, 2, 3]
+id(x)==id(y) # False, this is not a basic type
+}}}
+
+Note:
+* Pooling is for basic types only. Consquently, operations on basic types are not in-place - they return values.
+* For non basic types - change at memory location.
 
 === Assignment ===
 1. For basic data structures - string, int, bool, float - by value.
-2. All else - by reference(i.e only an alias is created). Use **obj.copy()** for a deep copy.
+2. All else - by reference(i.e only an alias is created).
 Note:
-	* use keyword '**is**' to check if two variables point to the same memory location.
-	* **==** does bit by bit comparison, except for functions, because undecidable.
+	* Use **obj.copy()** for a deep copy.
+	* use keyword '**is**' to check if variables are aliases.
+	* **==** does bit by bit comparison, except for functions - where False is returned, comparison is undecidable.
 
 === Augmented Assignment ===
 1. +, *, =, %, //, **
-2. In C/C++ and Java, both assignments are same. But python creates a buffer variable if we use long hand assignment. Augmented is in-place and hence fast.
+2. In C/C++ and Java, augmented assignment is a pure syntax sugar. But python creates a buffer variable if we use long hand assignment. Augmented is in-place and hence fast.
 3. Can be used universally, i.e used for strings too.
 4. Other operators are &=, ^=, |=, <<=, >>=
 
 === Walrus operator(assignment expressions) ===
-Just like C++, C, JS we can operate on an assignent expression, which first evaluates the expression and then operates on the value.
+Just like C++, C, JS we can operate on an assignent expression, which first replaces the expression with the calculated value.
 * Available in Python3.8+
-* Syntax - The assignment operator(=) has a colon before it, no spaces.
+* Syntax - The assignment operator(=) with a colon before it. No spaces.
 {{{code: lang="python3" linenumbers="True"
-(x=2)*3 # Syntax in C++, C, JS
-(x:=2)*3 # New Syntax - declaration/assignment and operation
+(x=2)*3 # Error before Python3.8
+(x:=2)*3 # x has become 2, result 6
+(x:=2*x+1)*x # 25
 }}}
