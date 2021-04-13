@@ -11,15 +11,13 @@ Created Saturday 17 October 2020
 * Python is dynamically typed(no need to specify type anywhere). Declarations and initalizations are done at the same time.
 * Has an automatic garbage-collector(no manual memory management required).
 
-=== Naming rules ===
+=== Variable Naming rules ===
 Same as C++
 * Symbols allowed - lowercase and uppercase english alphabets, digits(0-9) and the underscore(_).
 * Names cannot start with a digit
 
-**Basic Ops**
-* int(str, radix) returns the integer value.
-FIXME
-There are 3 kinds of variables in python:
+=== Types of variables ===
+There are 3 kinds of variables:
 1. Global variables
-2. Function Variables
+2. Function variables
 3. Class variables
