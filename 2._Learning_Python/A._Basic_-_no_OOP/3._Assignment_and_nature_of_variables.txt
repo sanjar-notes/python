@@ -6,9 +6,10 @@ Creation-Date: 2020-10-17T11:39:48+05:30
 Created Saturday 17 October 2020
 
 === Basic(Memory allocation) ===
-* Python pools basic variables. i.e x = 2; y = 2; point to the same location. Even z = 1 + 1 points to that location. Example - int, string.
-* Python does not pool non-basic types - list, dict etc.
+* Python keeps a single instance(in memory) for basic variables. i.e x = 2; y = 2; point to the same location. Even z = 1 + 1 points to that location. Example - int, string.
+* Python keeps separate copies for non-basic types - list, dict etc.
 {{./pasted_image.png}}
+Demo - ''id'' returns a 'memory address' equivalent, it is unique.
 {{{code: lang="python3" linenumbers="True"
 x = 2
 y = 1+1
@@ -21,16 +22,21 @@ id(x)==id(y) # False, this is not a basic type
 }}}
 
 Note:
-* Pooling is for basic types only. Consquently, operations on basic types are not in-place - they return values.
-* For non basic types - change at memory location.
+* Pooling is for basic types only. Fun fact: due to pooling nature of basic types, operations are not in-place - they always return a value.
 
-=== Assignment ===
-1. For basic data structures - string, int, bool, float - by value.
-2. All else - by reference(i.e only an alias is created).
+=== Assignment(no copy) ===
+* All assignments are references(alias). Python does shallow copy - new memory is not allocated.
+* Only one caveat - pooling, discussed before. Criteria - data type.
 Note:
+	* No copy holds for:
+		* nested variables
+		* Parameters(i.e caller and function share memory)
+		* Return values
+	{{./pasted_image001.png?width=300}}
 	* Use **obj.copy()** for a deep copy.
 	* use keyword '**is**' to check if variables are aliases.
-	* **==** does bit by bit comparison, except for functions - where False is returned, comparison is undecidable.
+	* **==** does bit by bit comparison, except for functions - where False is returned, because comparison is undecidable.
+--------------------
 
 === Augmented Assignment ===
 1. +, *, =, %, //, **
