@@ -1,3 +1,10 @@
+# Why 
+Frustrated by C++'s so prototyping
+
+Happened to require it for ML
+
+But then my college was stupid, so a [bot](https://github.com/dormant-sanjarcode/attend_lecture_bot)
+
 # What
 
 These are extensive notes that I made while learning Python3(in an organized way this time 🙃️).
