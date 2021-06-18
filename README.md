@@ -1,5 +1,5 @@
 # Why 
-Frustrated by C++'s so prototyping
+Frustrated by C++'s slow prototyping
 
 Happened to require it for ML
 
