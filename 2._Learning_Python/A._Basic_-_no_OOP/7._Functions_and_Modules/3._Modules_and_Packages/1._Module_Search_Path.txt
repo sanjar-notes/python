@@ -7,7 +7,7 @@ Created Tuesday 12 January 2021
 
 Modules are accessed by importing them, using the ''import'' keyword.
 
-When the interpreter executes an ''import'' statement, it searches the in the //in-built modules **first**//. If not found, it looks at ''sys.path'' which is initalized based on these sources:
+When the interpreter executes an ''import'' statement, it searches the //in-built modules **first**//. If not found, it looks at ''sys.path'' which is initalized based on these sources:
 1. Current directory - location where the interpreter was started, may not be the place where the top-level script is present.
 2. PYTHONPATH (a list of directory names, copy of the terminal shell variable called PATH).
 3. An installation-dependent list of directories configured at the time Python is installed. This contains modules installed using pip.

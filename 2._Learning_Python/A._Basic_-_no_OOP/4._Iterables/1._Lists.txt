@@ -30,7 +30,9 @@ Common operations:
 4. list(string) returns a list of the characters.
 
 === **Spread operator** - asterisk ===
-The spread operator is a very powerful and useful syntax sugar.
+* The spread operator is a very powerful and useful syntax sugar.
+* Used for list, set.
+* Double asterisk is used for dict.
 {{{code: lang="python3" linenumbers="True"
 x = [1, 2]
 y1 = list(x)+[3] # old style

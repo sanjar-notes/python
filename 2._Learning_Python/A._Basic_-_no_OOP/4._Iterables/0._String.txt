@@ -24,6 +24,6 @@ Created Thursday 14 January 2021
 	"day" in "Monday, return 
 
 **String methods**
-1. string.''strip()'' -> a string - removes the ending characters maximally w.r.t to the given string, until a unknown character is encountered
+1. string.''strip()'' -> a string - removes the ending characters maximally w.r.t to the given string, until a unknown character is encountered.
 2. string.''split([sep=whitespace, [max_splits=-1]])'' - returns a list of strings which were seperated by 'sep' in the "string"
 3. sep''.join(''iterable of strings'')'' -> a string - joins the list/set/dict into a string seperated by sep, solves terminating comma-like problems.

@@ -25,4 +25,4 @@ data[0]=2 # throws an error that tuples are immutable - demonstrates successful 
 }}}
 
 eval() evaluates any string passed to **it as legitimate parts** of the programs.
-**Note:**  eval() is not a good thing, coz it can be source of problems. Obviously. There are better ways to do it. As it could write/corrupt the file and/or have damaging unintended instructions while reading.
+**Note:**  eval() is not a good thing, coz it can be source of problems. Obviously. There are better ways to do it. As it could write/corrupt the file and/or have damaging/unintended instructions while reading.

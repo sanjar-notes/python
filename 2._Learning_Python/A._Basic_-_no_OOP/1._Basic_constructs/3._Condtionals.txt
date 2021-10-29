@@ -42,7 +42,7 @@ elif condition3:
 	# code
 	
 else:
-	# no else
+	# else
 }}}
 
 Note: This is a syntax demonstration, you can't have empty blocks in Python. If you want to "do nothing", use ''pass'' keyword. Like so:

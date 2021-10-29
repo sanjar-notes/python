@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-05-14T16:35:39+05:30
 
 ====== 1. Issues with Shelve ======
@@ -20,11 +20,11 @@ Created Thursday 14 May 2020
 * file.sync() clears the cache.
 {{{code: lang="python3" linenumbers="True"
 with shelve.open('recipies') as recipies:
-	recipies['blt'].append('butter')	#does not update
+	recipies['blt'].append('butter')	#does not update in file
 
 with shelve.open('recipies') as recipies:
 	temp_list = recipies['blt']
-	temp_list.append('butter')	#updates the list
+	temp_list.append('butter')	#updates the list in file
 }}}
 
 **Remember**: Only values are tangible(printable, processable), not metadata like keys(), values() etc. All values are **returned by** **value**. This is **practical** because a single entry can be worked upon rather than millions of data entries. **This is why append does not work.**

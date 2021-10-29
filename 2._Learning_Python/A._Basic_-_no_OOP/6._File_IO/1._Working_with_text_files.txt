@@ -10,7 +10,7 @@ Reading is very easy.
 	a. path can be relative(. and ..) or absolute. Just write file name if we are in the same directory.
 	b. File will be created, only in **w **mode.
 	c. Modes are discussed ahead.
-2. reading - check file.readable() == True
+2. reading - check ''file.readable()''
 	a. readline() - line by line, one line as a string at a time
 	b. readlines()  - returns a list of lines as strings
 	c. read() - returns the whole file as a string
@@ -27,7 +27,7 @@ f.close()
 * There's a fail-proof method for reading files - using **with **keyword, this tidies up the object after execution. Files support this. **with **also returns an exception if an **error occurs. **This is called a context Manager.
 This helps us release the file once we are done working on it:
 {{{code: lang="python3" linenumbers="True"
-with open('file.ext', 'r') as f: # same syntax as import
+with open('file.ext', 'r') as f: # same syntax as import, object of interest at the end
 	for line in f:
 		print(line, end='')
 # no need to close the file
