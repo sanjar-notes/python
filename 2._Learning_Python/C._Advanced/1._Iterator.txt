@@ -15,10 +15,10 @@ Only [[https://stackoverflow.com/questions/2777188/making-a-python-iterator-go-b
 === Syntax ===
 * Get an iterator - ''iter''(myIterable) returns an ''iterator''.
 * Move forward - ''next''(myIterator)
+Note: after the last elements iterator, we get an error.
 
-3. after the last elements iterator, we get an error
-
-
+Examples
+{{{code: lang="python3" linenumbers="True"
 string = "123456789"
 
 for char in string:
@@ -26,16 +26,19 @@ for char in string:
 
 for char in iter(string):
 	print(char)
+}}}
 
----
 
+{{{code: lang="python3" linenumbers="True"
 listt = ["sanjar", "maryam", 1, 2, 5, "ahmar", 7]
 
 my_iterator = iter(listt)
 
-# for i in range(len(listt)):
-#     print(next(my_iterator))
+for i in range(len(listt)):
+	print(next(my_iterator))
 
 # same as
 for i in listt:
 	print(i)
+
+}}}
