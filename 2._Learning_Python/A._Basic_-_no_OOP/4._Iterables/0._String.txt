@@ -7,7 +7,7 @@ Created Thursday 14 January 2021
 
 **Strings**
 1. Strings are immutable character array(coz lists are mutable).
-2. Access a single letter parrot[i].
+2. Access a single letter - parrot[i].
 	a. Here we can access ith from left, by giving i>=0.
 	b. By giving negative i, we can access characters from R->L e.g parrot[-1]
 3. Slice

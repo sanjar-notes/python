@@ -51,5 +51,5 @@ Just like C++, C, JS we can operate on an assignent expression, which first repl
 {{{code: lang="python3" linenumbers="True"
 (x=2)*3 # Error before Python3.8
 (x:=2)*3 # x has become 2, result 6
-(x:=2*x+1)*x # 25
+(x:=2*2+1)*x # 25
 }}}
