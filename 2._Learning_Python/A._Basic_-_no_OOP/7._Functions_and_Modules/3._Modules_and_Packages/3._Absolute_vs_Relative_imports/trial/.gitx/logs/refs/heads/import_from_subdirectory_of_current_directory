@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 8e6f3846e018bb136145fb19415b68484e8fea2a sanjarcode <sanjarcode@gmail.com> 1610796103 +0530	branch: Created from HEAD
-8e6f3846e018bb136145fb19415b68484e8fea2a 9a22a19e600421369dbab8ec2c671de7d3b29a5a sanjarcode <sanjarcode@gmail.com> 1610796216 +0530	commit: imported from next level subdirectory
-9a22a19e600421369dbab8ec2c671de7d3b29a5a cd442ad0aae7647343217ad1672593b88553c437 sanjarcode <sanjarcode@gmail.com> 1610796255 +0530	commit (amend): imported from next level subdirectory
-cd442ad0aae7647343217ad1672593b88553c437 9f10ded6b59aaa930ce3a3569da7f5ca9d470fc7 sanjarcode <sanjarcode@gmail.com> 1610796361 +0530	commit: imported from subdirectory - two levels below the current one
-9f10ded6b59aaa930ce3a3569da7f5ca9d470fc7 9f10ded6b59aaa930ce3a3569da7f5ca9d470fc7 sanjarcode <sanjarcode@gmail.com> 1610796580 +0530	Branch: renamed refs/heads/import_modules_from_subdirectory_of_current_directory to refs/heads/import_from_subdirectory_of_current_directory

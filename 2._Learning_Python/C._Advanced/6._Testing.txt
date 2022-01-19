@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-10-20T19:52:15+05:30
-
-====== 6. Testing ======
-Created Tuesday 20 October 2020
-
-* unittest module is helpful

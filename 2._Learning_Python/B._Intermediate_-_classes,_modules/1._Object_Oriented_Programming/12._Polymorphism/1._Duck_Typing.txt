@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-05-28T14:43:36+05:30
-
-====== 1. Duck Typing ======
-Created Thursday 28 May 2020
-
-Here the Penguin object does not inherit any of the duck features. But it does have some common attributes. Python is okay if we use a duck's function on a functions, as long as the attribute requirement is satisfied.[[../polymorphism_code/duck.py|duck]] 

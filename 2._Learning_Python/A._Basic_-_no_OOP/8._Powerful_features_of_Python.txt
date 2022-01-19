@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-01-14T17:21:52+05:30
-
-====== 8. Powerful features of Python ======
-Created Thursday 14 January 2021
-

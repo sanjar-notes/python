@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-10-20T19:32:31+05:30
-
-====== 5. collections module ======
-Created Tuesday 20 October 2020
-
-

@@ -1,2 +1,0 @@
-range(len(listt)):
-#     print

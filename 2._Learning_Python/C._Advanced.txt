@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-10-20T19:32:54+05:30
-
-====== C. Advanced ======
-Created Tuesday 20 October 2020
-
-https://tutorialedge.net/course/python/

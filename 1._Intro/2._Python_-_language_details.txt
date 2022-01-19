@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-03-15T20:04:33+05:30
-
-====== 2. Python - language details ======
-Created Monday 15 March 2021
-
-Skim the [[https://en.wikipedia.org/wiki/Python_(programming_language)|Wikipedia page.]]

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-03-15T20:06:21+05:30
-
-====== 3. Development In Python ======
-Created Monday 15 March 2021
-
