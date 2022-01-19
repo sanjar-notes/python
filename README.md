@@ -17,6 +17,4 @@ It contains almost all of the usual stuff. I know C++ and have shortened some to
 It does not cover things like meta-classes or decorators, yet.
 
 # Using this
-You can skim through the notes if you like: most files are plain text.
-
-To use the notes properly, install [zim-wiki](https://zim-wiki.org/index.html) and open `notebook.zim` with it.
+Clone or just skim it, it's Markdown 🙌.
