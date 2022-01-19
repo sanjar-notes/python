@@ -1,0 +1,4 @@
+import webbrowser
+# webbrowser.open("https://www.python.org/")
+help('print')
+
